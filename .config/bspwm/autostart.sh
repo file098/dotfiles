@@ -27,7 +27,7 @@ feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 
 dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 xsetroot -cursor_name left_ptr &
-run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
+run sxhkd -c ~/.config/sxhkd/sxhkdrc &
 
 conky -c $HOME/.config/bspwm/system-overview &
 run variety &

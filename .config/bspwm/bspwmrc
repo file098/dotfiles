@@ -8,7 +8,8 @@ bspc monitor -d 1 2 3 4 5 6 7 8
 
 # borders and gaps
 bspc config border_width         0
-bspc config window_gap           7
+bspc config window_gap           10
+bspc config top_padding 20
 
 # useful things
 bspc config split_ratio          0.50
@@ -23,3 +24,4 @@ bspc rule -a mpv state=floating
 bspc rule -a Blender desktop='^7' state=fullscreen follow=on
 bspc rule -a krita desktop='^6' state=fullscreen follow=on
 bspc rule -a Tint2 layer=above
+bspc rule -a Xface-terminal state=floating follow=on
