@@ -15,13 +15,15 @@ bspc config top_padding 20
 bspc config split_ratio          0.50
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
-bspc config focus_follows_pointer true
+#bspc config focus_follows_pointer true
+
 
 # application rules
+bspc rule -a Steam desktop='^2'
 bspc rule -a Gimp desktop='^8' follow=on
 bspc rule -a Firefox desktop='^2' follow=on
 bspc rule -a mpv state=floating
 bspc rule -a Blender desktop='^7' state=fullscreen follow=on
 bspc rule -a krita desktop='^6' state=fullscreen follow=on
 bspc rule -a Tint2 layer=above
-bspc rule -a Xface-terminal state=floating follow=on
+bspc rule -a Xfce4-terminal state=floating follow=on

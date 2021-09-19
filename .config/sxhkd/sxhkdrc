@@ -149,6 +149,11 @@ alt + shift + u
 ctrl + shift + Escape
     xfce4-taskmanager
 
+ctrl + Right 
+	bspc desktop --focus next
+
+ctrl + Left 
+	bspc desktop --focus prev
 
 #################################################################
 #     SCREENSHOTS
@@ -218,12 +223,12 @@ XF86AudioStop
     playerctl stop
 
 #Brightness up
-XF86MonBrightnessUp
-    xbacklight -inc 10
+#XF86MonBrightnessUp
+#    xbacklight -inc 10
 
 #Brightness down
-XF86MonBrightnessDown
-    xbacklight -dec 10
+#XF86MonBrightnessDown
+#    xbacklight -dec 10
 
 #########################
 #        POLYBAR        #
