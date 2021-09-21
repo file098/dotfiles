@@ -1,7 +1,7 @@
 [colors]
-background = #1c1c1c
+background = #0f0f0f
 background-alt = #c1c1c1
-foreground = #c1c1c1
+foreground = #e6e6e6
 foreground-alt = #262626
 primary = #464646
 secondary = #8aabac
@@ -10,7 +10,7 @@ alert = #ac8a8c
 [bar/bar1]
 monitor = ${env:MONITOR:}
 width = 1920px
-height = 14px
+height = 16px
 ;offset-x = 5px
 ;offset-y = 5px
 radius = 0
@@ -24,13 +24,13 @@ foreground = ${colors.foreground}
 border-size = 10
 border-color = ${colors.background}
 
-padding-left = 2
-padding-right = 2
+padding-left = 4
+padding-right = 4
 
 module-margin-left = 0
-module-margin-right = 3
+module-margin-right = 12
 
-font-0 = Overpass Nerd Font:pixelsize=10:weight=bold;3px
+font-0 = Overpass Nerd Font:pixelsize=12:weight=bold;3px
 
 modules-left = xworkspaces xwindow
 modules-center = date 
@@ -40,7 +40,6 @@ tray-position =
 tray-padding = 7
 
 wm-restack = bspwm
-;wm-restack = i3
 
 ;override-redirect = true
 
@@ -89,19 +88,22 @@ format-connected = %{A1:$HOME/.config/polybar/scripts/launchnm.sh:}直%{A}
 format-disconnected = %{A1:$HOME/.config/polybar/scripts/launchnm.sh:}睊%{A}
 format-disconnected-foreground = ${colors.alert}
 
+format-padding = 10
+label-active-padding-right = 6
+
 [module/date]
 type = internal/date
 interval = 5
 
-date = %A, %d %B %Y
-date-alt = " %Y-%m-%d"
+date-alt = %A, %d %B %Y
+date = "%d-%m-%Y"
 
-time = %H:%M %p %Z
+time = %H:%M:%S
 time-alt = %H:%M:%S
 
 format-underline = ${colors.primary}
 
-label = %date%, %time%
+label = %date%               %time%
 
 [module/pulseaudio-control]
 type = custom/script

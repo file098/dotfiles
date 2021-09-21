@@ -24,7 +24,7 @@ colors:
     text: "#e6e6e6"
     background: "#555555"
   primary:
-    background: "#292a2b"
+    background: "#0f0f0f"
     foreground: "#e6e6e6"
   normal:
     black: "#292a2b"
@@ -45,4 +45,4 @@ colors:
     cyan: "#6fc1ff"
     white: "#ffffff"
 
-background_opacity: 0.9
+background_opacity: 1.0
