@@ -34,10 +34,10 @@ font-0 = Overpass Nerd Font:pixelsize=12:weight=bold;3px
 
 modules-left = xworkspaces xwindow
 modules-center = date 
-modules-right = battery backlight bluetooth pulseaudio-control wlan
+modules-right = battery backlight bluetooth pulseaudio-control wlan power
 
-tray-position = 
-tray-padding = 7
+;tray-position = 1 
+;tray-padding = 7
 
 wm-restack = bspwm
 
@@ -160,6 +160,36 @@ exec = ~/.config/polybar/scripts/bluetooth.sh
 tail = true
 click-left = exec blueberry &
 click-right = exec $HOME/.config/polybar/scripts/toggle_bluetooth.sh
+
+[module/power]
+type = custom/menu
+expand-left = true
+label-open = 
+label-open-foreground = ${colors.foreground}
+;label-open-background = "#4F6570"
+label-open-padding = 3
+label-close = 
+label-close-foreground = ${colors.foreground}
+;label-close-background = "#4F6570"
+label-close-padding = 3
+
+menu-0-0 = 
+menu-0-0-foreground = ${colors.foreground}
+menu-0-0-padding = 2
+menu-0-0-exec = "poweroff"
+menu-0-1 = 
+menu-0-1-foreground = ${colors.foreground}
+menu-0-1-padding = 2
+menu-0-1-exec = reboot
+menu-0-2 = ⏾
+menu-0-2-foreground = ${colors.foreground}
+menu-0-2-padding = 2
+menu-0-2-exec = "systemctl suspend;betterlockscreen -l blur"
+menu-0-3 = 
+menu-0-3-foreground = ${colors.foreground}
+menu-0-3-padding = 2
+menu-0-3-exec = "betterlockscreen -l blur"
+  
 
 [settings]
 screenchange-reload = true

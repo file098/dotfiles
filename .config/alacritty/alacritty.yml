@@ -19,7 +19,7 @@ font:
 colors:
   cursor:
     text: "#fefff2"
-    cursor: "#ffb86c"
+    cursor: "#f1f1f1"
   selection:
     text: "#e6e6e6"
     background: "#555555"

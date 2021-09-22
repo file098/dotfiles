@@ -18,6 +18,10 @@ super + e
 super + w
     firefox
 
+#VSCode
+super + c
+    code 
+
 #arcolinux-logout
 super + x
     arcolinux-logout
