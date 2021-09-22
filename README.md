@@ -1,3 +1,3 @@
 # My dotfiles
 
-![Screenshot](screen.png)
+![Screenshot](screen.jpg)
