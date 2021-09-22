@@ -12,7 +12,7 @@
 
 #Dolphin
 super + e
-    dolphin
+    thunar
 
 #Browser
 super + w
@@ -43,7 +43,7 @@ super + Escape
 
 #File-Manager
 super + shift + Return
-	dolphin
+	thunar
 
 #dmenu
 super + shift + d
