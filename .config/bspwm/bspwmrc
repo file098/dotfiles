@@ -19,12 +19,6 @@ bspc config gapless_monocle      true
 
 
 # application rules
-bspc rule -a Steam desktop='^2'
-bspc rule -a Gimp desktop='^8' follow=on
-bspc rule -a Firefox desktop='^2' follow=on
-bspc rule -a mpv state=floating
-bspc rule -a Blender desktop='^7' state=fullscreen follow=on
-bspc rule -a krita desktop='^6' state=fullscreen follow=on
-bspc rule -a Tint2 layer=above
+bspc rule -a Steam desktop='^5'
 bspc rule -a Xfce4-terminal state=floating follow=on
-bspc rule -a Spotify desktop='^5'
+bspc rule -a Spotify desktop='^4'
