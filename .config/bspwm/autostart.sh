@@ -33,6 +33,7 @@ picom --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 nitrogen --restore &
 openrazer-daemon -Fv
+xfce4-power-manager
 #run caffeine &
 #run vivaldi-stable &
 #run firefox &
