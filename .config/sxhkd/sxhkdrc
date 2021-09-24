@@ -51,7 +51,7 @@ super + shift + Return
 
 #dmenu
 super + shift + d
-	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+	dmenu_run -i -nb '#0f0f0f' -nf '#f1f1f1' -sb '#f1f1f1' -sf '#0f0f0f' -fn 'OverpassNerdFont:bold:pixelsize=22'
 
 #reload sxhkd:
 super + shift + s
