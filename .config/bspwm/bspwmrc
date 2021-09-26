@@ -1,6 +1,7 @@
 #!/bin/sh
 
 #LAUNCHERS
+xsetroot -cursor_name left_ptr &
 sxhkd -c ~/.config/sxhkd/sxhkdrc &
 nitrogen --restore &
 $HOME/.config/polybar/launch.sh &
@@ -27,3 +28,4 @@ bspc config gapless_monocle      true
 bspc rule -a Steam desktop='^5'
 bspc rule -a Xfce4-terminal state=floating follow=on
 bspc rule -a Spotify desktop='^4'
+
