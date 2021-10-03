@@ -9,9 +9,10 @@ echo ".dotfiles" >> .gitignore
 git clone --bare https://www.github.com/file098/dotfiles.git $HOME/.dotfiles
 dotfiles checkout
 dotfiles config --local status.showUntrackedFiles no
-
+```
 
 ### Zsh plugins
+
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
