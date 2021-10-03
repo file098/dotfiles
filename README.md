@@ -26,3 +26,8 @@ git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plu
 git clone git://github.com/file098/startpage.git ~/.config/  
 ```
 
+### Packages
+```
+sudo pacman -Syu zsh nitrogen alacritty arandr spotify mailspring neovim firefox
+```
+
