@@ -19,3 +19,10 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlight
 ```
+
+### StartPage
+
+```
+git clone git://github.com/file098/startpage.git ~/.config/  
+```
+
