@@ -17,13 +17,13 @@ dotfiles config --local status.showUntrackedFiles no
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlight
+git clone git://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ```
 
 ### StartPage
 
 ```
-git clone git://github.com/file098/startpage.git ~/.config/  
+git clone git://github.com/file098/startpage.git ~/.config/startpage
 ```
 
 ### Packages
