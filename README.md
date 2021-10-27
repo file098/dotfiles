@@ -31,3 +31,8 @@ git clone git://github.com/file098/startpage.git ~/.config/startpage
 sudo pacman -Syu zsh nitrogen alacritty arandr spotify mailspring neovim firefox
 ```
 
+### Steam
+Launch options to run games with hybrid cards (Nvidia/Intel), with optimus-manager and bumblebee
+```
+LD_PRELOAD="/usr/lib32/libGL.so" optirun %command%
+```
