@@ -81,7 +81,7 @@ icon-4 = V;
 
 [module/wlan]
 type = internal/network
-interface = wlo1
+interface = wlan0
 interval = 5.0
 
 format-connected = %{A1:$HOME/.config/polybar/scripts/launchnm.sh:}直%{A}
