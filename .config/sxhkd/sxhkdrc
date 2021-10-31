@@ -22,10 +22,6 @@ super + w
 super + c
     code 
 
-#arcolinux-logout
-super + x
-    arcolinux-logout
-
 #Rofi theme selector
 super + r
     rofi-theme-selector
@@ -41,6 +37,9 @@ super + Return
 super + Escape
     xkill
 
+#Screenshot
+super + p
+	xfce4-screenshooter -f
 #################################################################
 # SUPER + SHIFT KEYS
 #################################################################
