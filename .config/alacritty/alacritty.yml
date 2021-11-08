@@ -8,13 +8,13 @@ scrolling:
 
 font:
   normal:
-    family: hack
+    family: Source Code Pro
     style: Regular
   bold:
-    family: hack
+    family: Source Code Pro
     style: Bold
   italic:
-    family: hack
+    family: Source Code Pro
     style: Italic
   bold_italic:
     family: monospace
@@ -50,4 +50,4 @@ colors:
     cyan: "#6fc1ff"
     white: "#ffffff"
 
-background_opacity: 1.0
+background_opacity: .9
