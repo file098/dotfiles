@@ -63,7 +63,7 @@ ctrl + alt + m
      xfce4-settings-manager
 
 #Pulse Audio Control
-alt + v
+super + v
      pavucontrol
      
 #Xcfe4-TaskManager
@@ -128,7 +128,7 @@ XF86AudioStop
 
 ############################### BSPWM ###############################
      
-alt + shift + {Left,Right}
+super + shift + {Left,Right}
     id=$(bspc query --nodes --node); bspc node --to-desktop {prev,next}; bspc desktop --focus next; bspc node --focus ${id}
 
 super + Right 
@@ -182,12 +182,12 @@ super + {_,shift + }a
 	bspc node @/ --flip {vertical,horizontal}
 
 # Move focused window to other monitor
-super + shift + Left
-	bspc node -m next --follow
+#super + shift + Left
+#	bspc node -m next --follow
 
 # Move focused window to other monitor
-super + shift + Right
-		bspc node -m next --follow
+#super + shift + Right
+#		bspc node -m next --follow
 
 # Move focused window to other monitor
 super + shift + Up
