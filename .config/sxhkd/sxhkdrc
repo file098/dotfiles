@@ -1,17 +1,29 @@
-
+############################### LAUNCHERS ###############################
 
 #Thunar
 super + e
     thunar
-
-#Browser
+super + shift + Return
+	thunar
+	
+#Firefox
 super + w
     firefox
+ctrl + alt + f
+     firefox
 
 #VSCode
 super + c
     code 
+    
+#Spotify
+ctrl + alt + s
+   spotify
 
+#Nitrogen
+ctrl + alt + i
+     nitrogen
+     
 #Rofi theme selector
 super + r
     rofi-theme-selector
@@ -19,7 +31,6 @@ super + r
 #Alacritty
 super + t
     alacritty
-
 super + Return
     alacritty
 
@@ -30,49 +41,18 @@ super + Escape
 #Screenshot
 super + p
 	xfce4-screenshooter -f
-#################################################################
-# SUPER + SHIFT KEYS
-#################################################################
-
-#File-Manager
-super + shift + Return
-	thunar
 
 #dmenu
 super + shift + d
 	dmenu_run -i -nb '#0f0f0f' -nf '#f1f1f1' -sb '#f1f1f1' -sf '#0f0f0f' -fn 'OverpassNerdFont:bold:pixelsize=22'
 
+#reload bspwm
+super + shift + r
+	~/.config/bspwm/bspwmrc
+
 #reload sxhkd:
 super + shift + s
 	pkill -USR1 -x sxhkd
-
-#################################################################
-# CONTROL + ALT KEYS
-#################################################################
-
-#arcolinux-welcome-app
-ctrl + alt + w
-     arcolinux-welcome-app
-
-#arcolinux-tweak-tool
-ctrl + alt + e
-    arcolinux-tweak-tool
-
-#Firefox
-ctrl + alt + f
-     firefox
-
-#Nitrogen
-ctrl + alt + i
-     nitrogen
-
-#arcolinux-logout
-ctrl + alt + k
-     arcolinux-logout
-
-#arcolinux-logout
-ctrl + alt + l
-    arcolinux-logout
 
 #Pamac-manager
 ctrl + alt + p
@@ -82,44 +62,23 @@ ctrl + alt + p
 ctrl + alt + m
      xfce4-settings-manager
 
-#Spotify
-ctrl + alt + s
-   spotify
-
-#################################################################
-# ALT + ... KEYS
-#################################################################
-
 #Pulse Audio Control
 alt + v
      pavucontrol
      
-alt + shift + {Left,Right}
-    id=$(bspc query --nodes --node); bspc node --to-desktop {prev,next}; bspc desktop --focus next; bspc node --focus ${id}
-
-#################################################################
-# CONTROL + SHIFT KEYS
-#################################################################
-
 #Xcfe4-TaskManager
 ctrl + shift + Escape
     xfce4-taskmanager
-
-super + Right 
-	bspc desktop --focus next
-
-super + Left 
-	bspc desktop --focus prev
+    
+############################### Utility ###############################
 
 #screeenshooter
 ctrl + Print
      xfce4-screenshooter
 
-
 #xfce4-terminal dropdown
 F12
     xfce4-terminal --drop-down
-
 
 #Raises volume
 XF86AudioRaiseVolume
@@ -166,10 +125,18 @@ XF86AudioStop
 #XF86MonBrightnessDown
     xbacklight -dec 10
 
-#################################################################
-# SUPER + KEYS
-#################################################################
 
+############################### BSPWM ###############################
+     
+alt + shift + {Left,Right}
+    id=$(bspc query --nodes --node); bspc node --to-desktop {prev,next}; bspc desktop --focus next; bspc node --focus ${id}
+
+super + Right 
+	bspc desktop --focus next
+
+super + Left 
+	bspc desktop --focus prev
+	
 #Toggle fullscreen of window
 super + f
 	bspc node --state \~fullscreen
@@ -198,30 +165,13 @@ super + space
 super + BackSpace
 		bspc monitor -f next
 
-#################################################################
-# SUPER + ALT KEYS
-#################################################################
-
 # Move floating window
 super + alt + {_,shift + }{Left,Down,Up,Right}
 	~/.config/bspwm/scripts/move-window {_,edge-}{west,south,north,east}
 
-#################################################################
-# SUPER + CONTROL KEYS
-#################################################################
-
 # Cancel preselection
 super + ctrl + space
 	bspc node --presel-dir cancel
-
-#################################################################
-# SUPER + SHIFT KEYS
-#################################################################
-
-
-#Reload bspwm
-super + shift + r
-	~/.config/bspwm/bspwmrc
 
 # Focus/swap windows by direction
 super + {_,shift + }{h,j,k,l}
@@ -247,10 +197,6 @@ super + shift + Up
 super + shift + Down
 		bspc node -m next --follow
 
-#################################################################
-# SUPER + CONTROL KEYS
-#################################################################
-
 # Focus/swap windows by direction
 super + ctrl + {Left,Down,Up,Right}
 	bspc node --{focus} {west,south,north,east}
@@ -271,16 +217,9 @@ super + ctrl + {u,i,o,p}
 super + ctrl + {_,shift +}{1-9}
 	bspc node {_,@/} --presel-ratio 0.{1-9}
 
-
-#################################################################
-# ALT KEYS
-#################################################################
-
 #Focus selected desktop
 alt + Tab
 	bspc desktop -f '^{1-9,10}'
-
-	#Focus selected desktop
 alt + shift + Tab
 	bspc desktop -f '^{1-9,10}'
 
@@ -309,4 +248,3 @@ ctrl + alt + Left
 # Focus next/previous window
 ctrl + alt + Right
 	bspc node --focus east
-
