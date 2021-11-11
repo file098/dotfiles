@@ -4,7 +4,7 @@
 xsetroot -cursor_name left_ptr &
 sxhkd -c ~/.config/sxhkd/sxhkdrc &
 nitrogen --restore &
-$HOME/.config/polybar/launch.sh &
+$HOME/.config/polybar/launch.sh --docky &
 openrazer-daemoon -Fv
 xfce4-power-management
 steam &
