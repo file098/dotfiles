@@ -3,10 +3,11 @@
 #LAUNCHERS
 xsetroot -cursor_name left_ptr &
 sxhkd -c ~/.config/sxhkd/sxhkdrc &
+picom & 
 nitrogen --restore &
 $HOME/.config/polybar/launch.sh --docky &
 openrazer-daemoon -Fv
-xfce4-power-management
+xfce4-power-manager &
 steam &
 
 # here you set desktop names
@@ -26,6 +27,6 @@ bspc config gapless_monocle      true
 
 # application rules
 bspc rule -a Steam desktop='^5'
-bspc rule -a Xfce4-terminal state=floating follow=on
 bspc rule -a Spotify desktop='^4'
+bspc rule -a Xfce4-terminal state=floating follow=on
 
