@@ -72,6 +72,11 @@ ctrl + shift + Escape
     
 ############################### Utility ###############################
 
+#Hide polybar
+super + y
+    polybar-msg cmd toggle
+
+
 #screeenshooter
 ctrl + Print
      xfce4-screenshooter
