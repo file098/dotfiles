@@ -23,12 +23,14 @@ git clone git://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom
 ### StartPage
 
 ```
-git clone git://github.com/file098/startpage.git ~/.config/startpage
+git clone git://github.com/file098/startpage.git ~/.config/
 ```
 
 ### Packages
 ```
-sudo pacman -Syu zsh nitrogen alacritty arandr spotify mailspring neovim firefox
+sudo pacman -Syu zsh nitrogen alacritty arandr spotify mailspring neovim firefox nvidia --needed
+
+yay -S optimus-manager openrazer-meta polychromatic
 ```
 
 ### Steam
