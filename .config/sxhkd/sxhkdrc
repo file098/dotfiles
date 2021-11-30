@@ -42,10 +42,10 @@ super + Escape
 super + p
 	xfce4-screenshooter -f
 
-#dmenu
+#rofi
 super + shift + d
-	dmenu_run -i -nb '#0f0f0f' -nf '#f1f1f1' -sb '#f1f1f1' -sf '#0f0f0f' -fn 'OverpassNerdFont:bold:pixelsize=22'
-
+	rofi -show run -theme /home/file0/rofi-collection/minimal/minimal.rasi
+	
 #reload bspwm
 super + shift + r
 	~/.config/bspwm/bspwmrc
