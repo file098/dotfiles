@@ -1,0 +1,17 @@
+2021/12/21-21:16:50.593 9d9 Reusing MANIFEST /home/file0/.config/Atom/Local Storage/leveldb/MANIFEST-000001
+2021/12/21-21:16:50.593 9d9 Recovering log #3
+2021/12/21-21:16:50.593 9d9 Reusing old log /home/file0/.config/Atom/Local Storage/leveldb/000003.log 
+2021/12/21-21:22:43.514 fce Level-0 table #5: started
+2021/12/21-21:22:43.527 fce Level-0 table #5: 68300 bytes OK
+2021/12/21-21:22:43.532 fce Delete type=0 #3
+2021/12/21-21:22:54.443 fce Level-0 table #7: started
+2021/12/21-21:22:54.460 fce Level-0 table #7: 150196 bytes OK
+2021/12/21-21:22:54.464 fce Delete type=0 #4
+2021/12/21-21:23:51.339 fce Level-0 table #9: started
+2021/12/21-21:23:51.350 fce Level-0 table #9: 32046 bytes OK
+2021/12/21-21:23:51.354 fce Delete type=0 #6
+2021/12/21-21:24:51.339 fce Level-0 table #11: started
+2021/12/21-21:24:51.351 fce Level-0 table #11: 52469 bytes OK
+2021/12/21-21:24:51.356 fce Delete type=0 #8
+2021/12/21-21:26:21.593 fce Level-0 table #13: started
+2021/12/21-21:26:21.600 fce Level-0 table #13: 115486 bytes OK
