@@ -19,7 +19,7 @@ font:
   bold_italic:
     family: monospace
     style: Bold Italic
-  size: 9
+  size: 11
 
 colors:
   cursor:
