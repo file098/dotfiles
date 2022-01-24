@@ -2,7 +2,7 @@ window:
   padding:
     x: 15
     y: 15
-
+  opacity: 0.9
 scrolling:
   history: 50000
 
@@ -19,7 +19,7 @@ font:
   bold_italic:
     family: monospace
     style: Bold Italic
-  size: 11
+  size: 9
 
 colors:
   cursor:
@@ -49,5 +49,3 @@ colors:
     magenta: "#ff9ac1"
     cyan: "#6fc1ff"
     white: "#ffffff"
-
-background_opacity: .9
