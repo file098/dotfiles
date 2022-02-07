@@ -1,9 +1,0 @@
-"*":
-  core:
-    telemetryConsent: "no"
-    themes: [
-      "one-dark-ui"
-      "atom-panda-syntax"
-    ]
-  "exception-reporting":
-    userId: "41398343-fc2e-4c39-828a-ce586ffc24f0"
