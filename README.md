@@ -20,7 +20,6 @@ git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plu
 git clone git://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ```
 
-
 ### Steam
 Launch options to run games with hybrid cards (Nvidia/Intel), with optimus-manager and bumblebee
 ```
