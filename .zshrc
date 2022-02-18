@@ -5,7 +5,7 @@ ZSH_THEME="robbyrussell"
 
 ENABLE_CORRECTION="true"
 
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting sudo web-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -32,3 +32,8 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias config="cd ~/.config"
+alias at="alacritty-themes"
+
+# Functions
+
+chpwd() ls -alt
