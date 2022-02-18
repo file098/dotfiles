@@ -7,45 +7,32 @@ scrolling:
   history: 50000
 
 font:
-  normal:
-    family: Source Code Pro
-    style: Regular
-  bold:
-    family: Source Code Pro
-    style: Bold
-  italic:
-    family: Source Code Pro
-    style: Italic
-  bold_italic:
-    family: monospace
-    style: Bold Italic
-  size: 9
-
+  size: 11
 colors:
-  cursor:
-    text: "#fefff2"
-    cursor: "#f1f1f1"
-  selection:
-    text: "#e6e6e6"
-    background: "#555555"
+  name: Ashes (dark)
+  author: Chris Kempson
   primary:
-    background: "#0f0f0f"
-    foreground: "#e6e6e6"
+    background: "#1c2023"
+    foreground: "#c7ccd1"
+  cursor:
+    text: "#1c2023"
+    cursor: "#c7ccd1"
   normal:
-    black: "#292a2b"
-    red: "#ff2c6d"
-    green: "#19f9d8"
-    yellow: "#ffb86c"
-    blue: "#45a9f9"
-    magenta: "#ff75b5"
-    cyan: "#6fc1ff"
-    white: "#e6e6e6"
+    black: "#1c2023"
+    red: "#c7ae95"
+    green: "#95c7ae"
+    yellow: "#aec795"
+    blue: "#ae95c7"
+    magenta: "#c795ae"
+    cyan: "#95aec7"
+    white: "#c7ccd1"
   bright:
-    black: "#555555"
-    red: "#ff2c6d"
-    green: "#19f9d8"
-    yellow: "#ffcc95"
-    blue: "#6fc1ff"
-    magenta: "#ff9ac1"
-    cyan: "#6fc1ff"
-    white: "#ffffff"
+    black: "#747c84"
+    red: "#c7ae95"
+    green: "#95c7ae"
+    yellow: "#aec795"
+    blue: "#ae95c7"
+    magenta: "#c795ae"
+    cyan: "#95aec7"
+    white: "#f3f4f5"
+theme: Ashes.dark
