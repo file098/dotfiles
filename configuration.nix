@@ -13,26 +13,57 @@
   # Use the systemd-boot EFI boot loader.
   #boot.loader.systemd-boot.enable = true;
 
+#  boot.loader = {
+#      #efi = {
+#      #  canTouchEfiVariables = true;
+#      #  efiSysMountPoint = "/boot";
+#      #};
+#      grub = {
+#        enable = true;
+#        version = 2;
+#        device = "/dev/nvme0n1";
+#        useOSProber = true;
+#        extraEntries = '' 
+#        ''; 
+#      };
+#    };
+ 
   boot.loader = {
-      #efi = {
-      #  canTouchEfiVariables = true;
-      #  efiSysMountPoint = "/boot";
-      #};
-      grub = {
-        enable = true;
-        version = 2;
-        device = "/dev/nvme0n1";
-        useOSProber = true;
-        extraEntries = '' 
-        ''; 
-      };
+    efi = {
+      canTouchEfiVariables = true;
+      # assuming /boot is the mount point of the  EFI partition in NixOS (as the installation section recommends).
+      efiSysMountPoint = "/boot";
     };
-   
+    grub = {
+      # despite what the configuration.nix manpage seems to indicate,
+      # as of release 17.09, setting device to "nodev" will still call
+      # `grub-install` if efiSupport is true
+      # (the devices list is not used by the EFI grub install,
+      # but must be set to some value in order to pass an assert in grub.nix)
+      devices = [ "nodev" ];
+      efiSupport = true;
+      enable = true;
+      # set $FS_UUID to the UUID of the EFI partition
+      extraEntries = ''
+        menuentry "Windows" {
+          insmod part_gpt
+          insmod fat
+          insmod search_fs_uuid
+          insmod chain
+          search --fs-uuid --set=root $FS_UUID
+          chainloader /EFI/Microsoft/Boot/bootmgfw.efi
+        }
+      '';
+      version = 2;
+    };
+  };
+  
   networking.hostName = "blade"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Set your time zone.
   time.timeZone = "Europe/Amsterdam";
+  time.hardwareClockInLocalTime = true;
 
   # The global useDHCP flag is deprecated, therefore explicitly set to false here.
   # Per-interface useDHCP will be mandatory in the future, so this generated config
@@ -101,15 +132,25 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
    environment.systemPackages = with pkgs; [
+     # Core
      vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
      wget
      firefox
      git
      neofetch
+     atom
+     # Gnome 
      gnomeExtensions.dash-to-dock
      gnomeExtensions.gsconnect
      pkgs.gnome3.gnome-tweaks
+     # Other
      tdesktop
+     discord
+     spotify
+     vlc
+     steam
+     alacritty
+     whatsapp-for-linux
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -133,9 +174,9 @@
 
   users.defaultUserShell = pkgs.zsh;
   programs.zsh = {
-    oh-my-zsh = {
+    ohMyZsh = {
       enable = true;
-      plugins = [ "git" "thefuck" "sudo" "zsh-autosuggestions" "zsh-syntax-highlighting" "zsh-completions" ];
+      plugins = [ "git" "thefuck" "sudo" "zsh-autosuggestions" "zsh-syntax-highlighting" "zsh-completions" "lol" ];
       theme = "robbyrussell";
     };
     shellAliases = {
